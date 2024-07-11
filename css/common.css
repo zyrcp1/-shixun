@@ -1,0 +1,203 @@
+/* setting start */
+body,h2,h3,h4,h5,p,ul,li,form,dl,dd,dt{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    border: none;
+    display: block;
+}
+
+/* 杜勇的可选内容 */
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-family:"Microsoft YaHei","微软雅黑";
+    box-sizing: border-box;
+}
+:root{
+    font-size: 5.6vw;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: 0em;
+    fill: currentColor;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.none{
+    display: none;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    z-index: 10;
+    background-color: #F2F3F5;
+}
+
+#mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+#menu .user-header{
+    padding: 0.5rem 0.8rem;
+    background-color: #eee;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+#menu .user-detail{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+#menu .menu-content{
+    padding: 5rem 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 80%;
+}
+#menu img{
+    width: 2rem;
+    border-radius: 2rem;
+}
+#menu .nickname {
+    max-width: 2.4rem;
+    overflow: hidden;
+    font-size: 0.7rem;
+    margin-left: 0.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#menu .player-time{
+    color: #aaa;
+    width: 100%;
+    font-size: 0.5rem;
+    padding: 0 0.4rem;
+    margin-top: 0.1rem;
+}
+
+#menu .vip {
+    margin-left: 0.4rem;
+    font-size: 0.7rem;
+}
+
+#menu .vip .icon {
+    vertical-align: -0.1rem;
+}
+
+#menu .tips {
+    height: 0.8rem;
+    margin-left: 0.2rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.6rem;
+    color: #604621;
+    background-color: rgb(253, 232, 201);
+}
+.user-header .iconfont{
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+#menu .setting-box{
+    padding: 0.8rem 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.setting-box .iconfont{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+.setting-box span:nth-of-type(2){
+    font-size: 0.6rem;
+    margin: 0.5rem 0;
+}
+.setting-box li{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.8rem;
+    align-items: center;
+}
+#menu .ulist{
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+}
+.ulist li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+.ulist .iconfont{
+    font-size: 1.2rem;
+}
+.ulist span:nth-of-type(2){
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+}
+#menu .slist{
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+}
+.slist li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+.slist .iconfont{
+    font-size: 1.2rem;
+}
+.slist span:nth-of-type(2){
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+}
+#menu .menu-footer{
+    position: fixed;
+    color: #999;
+    width: 90%;
+    height: 2rem;
+    bottom: 0;
+    padding: 0 0.8rem;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+}
+.menu-footer .btn{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.menu-footer span:nth-of-type(2){
+    font-size: 0.6rem;
+    margin-left: 0.2rem;
+}
+/* setting end */

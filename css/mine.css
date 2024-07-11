@@ -1,0 +1,511 @@
+/* header start */
+#header {
+    padding: 0.5rem 0;
+    width: 100%;   
+    background-image: radial-gradient(circle,#fff 20%,rgb(251, 237, 128) 80%);
+}
+#header .nav{
+    padding: 0.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: 9;
+}
+.navigation {
+    display: flex;
+    flex: 1;
+    margin-left: 0.5rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.navigation::-webkit-scrollbar {
+    display: none;
+}
+
+.navigation li {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+    color: #333;
+}
+
+.navigation .active {
+    position: relative;
+    color: #000;
+    font-weight: bold;
+}
+
+.navigation .active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.1rem;
+    height: 0.25rem;
+    background: linear-gradient(90deg, rgba(251, 237, 128,50%) 0%, rgb(253, 221, 74) 100%);
+    border-radius: 0.25rem;
+}
+
+#header .right-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0.8rem;
+}
+
+.right-container .microphone {
+    flex: 1;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+.right-container .search-icon {
+    flex: 1;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+.right-container .erweima {
+    flex: 1;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.right-container .menu {
+    flex: 1;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+#header .user-box {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 85%;
+    padding: 0.8rem 0.8rem;
+    margin-left: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.8rem;
+}
+
+#header .user-box img {
+    width: 2rem;
+    border-radius: 1rem;
+}
+
+#header .nickname {
+    max-width: 2.4rem;
+    overflow: hidden;
+    font-size: 0.7rem;
+    margin-left: 0.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#header .player-time{
+    color: #aaa;
+    width: 100%;
+    font-size: 0.5rem;
+    padding: 0 2.3rem;
+}
+
+#header .user-box .vip {
+    margin-left: 0.4rem;
+    font-size: 0.7rem;
+}
+
+#header .user-box .vip .icon {
+    vertical-align: -0.1rem;
+}
+
+#header .user-box .tips {
+    height: 0.8rem;
+    margin-left: 0.2rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.6rem;
+    color: #604621;
+    background-color: rgb(253, 232, 201);
+}
+
+#header .setting{
+    width: 100%;
+    padding: 0.8rem 0.2rem;
+}
+.setting .set-list{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.set-list li{
+    display: flex;
+    align-items: center;
+    margin-right: 0.8rem;
+}
+.set-list .icon{
+    font-size: 1.2rem;
+}
+.set-list span{
+    font-size: 0.6rem;
+    color: #999;
+    margin-left: 0.2rem;
+}
+/* header end */
+
+/* footer start */
+footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;  
+}
+footer ul{
+    display: flex;
+}
+footer li{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+footer div{
+    text-align: center;
+    position: relative;
+}
+footer svg{
+    font-size: 1rem;
+    color: #333;
+}
+footer p{
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
+footer a{
+    color: #333;
+}
+footer .selected {
+    background-color: rgb(251, 237, 128);
+    width: 1.5rem;
+    height: 1.3rem;
+    border-radius: 1rem;
+}
+footer .player{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: left;
+    margin: 0.2rem 0.8rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: #C6CACD;
+}
+footer .record{
+    position: absolute;
+    bottom: -0.4rem;
+    left: -0.1rem;
+}
+.record svg{
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: yellow;
+}
+.player .music-name{
+    margin-left: 2.5rem;
+    font-size: 0.6rem;
+    color: #fff;
+    flex: 1;
+}
+.player .play-btn{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 0.2rem;
+}
+.play-btn svg{
+    font-size: 1.2rem;
+}
+/* footer end */
+/* main start */
+main{
+    width: 100%;
+    background-color: #FBFBFB;
+}
+main .vip-task{
+    margin: 0 0.8rem;
+    display: flex;
+    align-items: center;
+    background-color: #FCEECB;
+    border-radius: 0.5rem;
+}
+.vip-task .vip-content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #FBDEA2;
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 45%;
+    border-top-right-radius: 5%;
+    border-right: 0.2rem solid #fff;
+    
+}
+.vip-content span{
+    font-size: 0.6rem;
+}
+.vip-task .task{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 0.5rem;
+}
+.task span{
+    font-size: 0.6rem;
+}
+main .menuTab ul {
+    margin: 1rem 0.5rem;
+    padding: 0 0.8rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    align-items: center;
+}
+
+main .menuTab li {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin-right: 1.6rem;
+}
+
+main .menuTab svg {
+    font-size: 1.2rem;
+}
+
+main .menuTab div {
+    text-align: center;
+}
+
+main .menuTab p {
+    color: #444;
+    font-size: 0.6rem;
+    white-space: nowrap;
+}
+main .live{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0.8rem;
+    background-color: #fff;
+}
+.live .title{
+    flex: 1;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.live svg{
+    font-size: 0.6rem;
+}
+.live .art{
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+.art .txt{
+    font-size: 0.5rem;
+    padding: 0.3rem;
+    color: #666;
+    background-color: #eee;
+    border-radius: 1rem;
+}
+.art img{
+    width: 1.2rem;
+    border-radius: 1.2rem;
+}
+.art .right{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+main .sheet{
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 0.6rem;
+}
+
+.sheet .sheet-nav{
+    display: flex;
+    align-items: center;
+}
+.sheet-nav .nav-list{
+    display: flex;
+    flex: 1;
+}
+.nav-list li{
+    font-size: 0.7rem;
+    color: #aaa;
+    margin-right: 0.4rem;
+}
+.sheet-nav .button{
+    display: flex;
+    align-items: center;
+}
+.sheet-nav svg{
+    font-size: 0.6rem;
+}
+.button span{
+    font-size: 0.5rem;
+    color: #666;
+    margin-right: 0.5rem;
+    padding: 0 0.2rem;
+    border-radius: 0.2rem;
+    border: 1px solid #666;
+}
+.nav-list .active{
+    position: relative;
+    color: #000;
+}
+.nav-list .active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.2rem;
+    height: 0.25rem;
+    background:  rgb(253, 221, 74);
+    border-radius: 0.25rem;
+}
+.sheet-content{
+    margin-top: 0.5rem;
+    width: 100%;
+}
+.sheet-content .left{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    
+}
+.left svg{
+    font-size: 1.3rem;
+}
+.sheet-content span{
+    margin-left: 0.5rem;
+    font-size: 0.6rem;
+    color: #444;
+}
+.sheet-content .right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.right svg{
+    padding: 0.7rem;
+    background-color: #eee;
+    border-radius: 0.8rem;
+}
+.contain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contain svg{
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 0.8rem;
+}
+main .game-center{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0.8rem;
+    background-color: #fff;
+}
+.game-center .title{
+    flex: 1;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.game-center .art{
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+.game-center .txt{
+    font-size: 0.5rem;
+    padding: 0.3rem;
+    color: #666;
+    background-color: #eee;
+    border-radius: 1rem;
+}
+.game-center img{
+    width: 1.2rem;
+    border-radius: 1.2rem;
+}
+.game-center svg{
+    font-size: 0.6rem;
+}
+.game-center .right{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+#main .recommend-music {
+    margin: 0.8rem 0.8rem;
+    height: 15rem;
+    padding: 1.2rem 0;
+}
+
+.recommend-music .title {
+    flex: 1;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.recommend-music ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0.8rem 0;
+}
+
+.recommend-music li {
+    display: flex;
+    width: 85%;
+    padding: 0.2rem 0.5rem;
+    align-items: center;
+}
+
+.recommend-music .albumcover {
+    width: 2.8rem;
+    border-radius: 0.2rem;
+}
+
+.recommend-music .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 4;
+    margin-left: 0.5rem;
+}
+
+.name span {
+    font-size: 0.8rem;
+}
+
+.name p {
+    font-size: 0.6rem;
+}
+.love-add{
+    flex: 1;
+}
+.love-add .iconfont{
+    color: #ddd;
+}
+/* main end */

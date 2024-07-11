@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>酷我音乐-个人中心</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/mine.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="../swiper-bundle.min.css" />
+    <script src="./fonts/iconfont.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="nav">
+            <ul class="navigation">
+                <li class="active">我的</li>
+            </ul>
+            <div class="right-container">
+                <div class="search-icon">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-sousuo"></use>
+                    </svg>
+                </div>
+                <div class="erweima">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-iconfontscan"></use>
+                    </svg>
+                </div>
+                <div class="microphone">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-_maikefeng"></use>
+                    </svg>
+                </div>
+                <div class="menu" onclick="menuView()">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-caidan"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="user-box">
+            <img src="https://foruda.gitee.com/avatar/1696342942137152712/5352827_adnaan_1696342942.png!avatar200"
+                alt="">
+            <span class="nickname">这里是昵称</span>
+            <span class="vip">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dingyue"></use>
+                </svg>
+            </span>
+            <span class="tips">新客￥0.88></span>
+            <span class="player-time">累计听歌6首></span>
+            <div class="setting">
+                <ul class="set-list">
+                    <li>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-fuwu"></use>
+                        </svg>
+                        <span>装扮中心</span>
+                    </li>
+                    <li>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-duomeiti"></use> "></use>
+                        </svg>
+                        <span>音乐档案</span>
+                    </li>
+                    <li>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-hongbao"></use>
+                        </svg>
+                        <span>做任务赚钱</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="vip-task">
+            <div class="vip-content">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dingyue"></use>
+                </svg>
+                <span>会员中心</span>
+            </div>
+            <div class="task">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-hongbao1"></use>
+                </svg>
+                <span>年卡5折</span>
+            </div>
+        </div>
+        <div class="menuTab">
+            <ul>
+                <li>
+                    <div>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-shoucang"></use>
+                        </svg>
+                        <p>收藏</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-shouji"></use>
+                        </svg>
+                        <p>本地</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-xiazaiwenjian"></use>
+                        </svg>
+                        <p>下载</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-dingyue1"></use>
+                        </svg>
+                        <p>订阅</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-zuijinfangwen"></use>
+                        </svg>
+                        <p>最近播放</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-yingyongshangdian"></use>
+                        </svg>
+                        <p>已下载</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="live">
+            <span class="title">直播</span>
+            <div class="art">
+                <span class="txt">你的心动主播开播了</span>
+                <img src="https://img0.baidu.com/it/u=3792562235,1117894155&fm=253&fmt=auto&app=138&f=JPEG?w=380&h=380"
+                    alt="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jiantouyou"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="sheet">
+            <div class="sheet-nav">
+                <ul class="nav-list">
+                    <li class="active">自建歌单</li>
+                    <li>收藏歌单</li>
+                </ul>
+                <div class="button">
+                    <span>导入</span>
+                    <span>+</span>
+                </div>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jiantouyou"></use>
+                </svg>
+            </div>
+            <div class="sheet-content">
+                <div class="contain">
+                    <div class="left">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-tianjia"></use>
+                        </svg>
+                        <span>新建歌单</span>
+                    </div>
+                    <div class="right">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-daoru"></use>
+                        </svg>
+                        <span>导入歌单</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sheet-content none">
+                <div class="contain">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ic_cd"></use>
+                    </svg>
+                    <span>没有收藏歌单</span>
+                </div>
+            </div>
+        </div>
+        <div class="game-center">
+            <span class="title">游戏中心</span>
+            <div class="art">
+                <span class="txt">边听边玩</span>
+                <img src="https://img0.baidu.com/it/u=3792562235,1117894155&fm=253&fmt=auto&app=138&f=JPEG?w=380&h=380"
+                    alt="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jiantouyou"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="recommend-music">
+            <div class="title">会员歌曲推荐</div>
+            <ul></ul>
+        </div>
+    </main>
+    <div id="mask" class="none"></div>
+    <div id="menu" class="none">
+        <div class="user-header">
+            <img src="https://foruda.gitee.com/avatar/1696342942137152712/5352827_adnaan_1696342942.png!avatar200"
+                alt="">
+            <div class="user-detail">
+                <span class="nickname">这里是昵称</span>
+                <span class="vip">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-dingyue"></use>
+                    </svg>
+                </span>
+                <span class="tips">新客￥0.88></span>
+                <span class="player-time">累计听歌：6首</span>
+            </div>
+            <span class="iconfont icon-duanxin"></span>
+        </div>
+        <div class="menu-content">
+            <ul class="setting-box">
+                <li>
+                    <span class="iconfont icon-_maikefeng"></span>
+                    <span>听歌识曲</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-icon-dress_up"></span>
+                    <span>装扮中心</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-sirenyunpan"></span>
+                    <span>音乐云盘</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-iconfontscan"></span>
+                    <span>扫一扫</span>
+                </li>
+            </ul>
+            <ul class="ulist">
+                <li>
+                    <span class="iconfont icon-huiyuan"></span>
+                    <span>会员中心</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-dengpao"></span>
+                    <span>创作者中心</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-huodongzhongxin"></span>
+                    <span>活动中心</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-airudiantubiaohuizhi-zhuanqu_youxi "></span>
+                    <span>边听边玩</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-z_nav_icon_SIM_nor"></span>
+                    <span>免流量畅听</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-xiaoxitongzhitixinglingshenglingdang-xianxing"></span>
+                    <span>热门彩铃</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-microphone"></span>
+                    <span>我要唱歌</span>
+                </li>
+            </ul>
+            <ul class="slist">
+                <li>
+                    <span class="iconfont icon-naozhong"></span>
+                    <span>睡眠定时</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-wifi"></span>
+                    <span>仅WIFI下联网</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-geci"></span>
+                    <span>铃声剪辑</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-fankui"></span>
+                    <span>帮助与反馈</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-zhongcao-1"></span>
+                    <span>青少年模式</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-jinggao"></span>
+                    <span>未成年相关举报</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-footer">
+            <div class="btn">
+                <span class="iconfont icon-shezhi"></span>
+                <span>设置</span>
+            </div>
+            <div class="btn">
+                <span class="iconfont icon-tuichu"></span>
+                <span>退出账号/关闭</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="player">
+            <span class="record">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dvd_flat"></use>
+                </svg>
+            </span>
+            <span class="music-name">可惜没如果-林俊杰</span>
+            <span class="play-btn">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-bofangqi-bofang"></use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-next-fill"></use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-playlist3"></use>
+                </svg>
+            </span>
+        </div>
+        <ul>
+            <li>
+                <div>
+                    <a href="./index.html">
+                        <div>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-shouyeweixuanzhong"></use>
+                            </svg>
+                        </div>
+                        <p>首页</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="#">
+                        <div>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-icon_zhibo-xian"></use>
+                            </svg>
+                        </div>
+                        <p>直播</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="./ing.html">
+                        <div>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-erji"></use>
+                            </svg>
+                        </div>
+                        <p>ing</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="./vip.html">
+                        <div>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-zuanshi"></use>
+                            </svg>
+                        </div>
+                        <p>会员</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="selected">
+                    <a href="./mine.html">
+                        <div>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-dkw_wode-"></use>
+                            </svg>
+                        </div>
+                        <p>我的</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/mine.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

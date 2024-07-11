@@ -1,0 +1,800 @@
+/* header start */
+#header {
+    width: 100%;
+    position: fixed;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 9;
+    background-image: radial-gradient(circle, #fff 20%, rgb(251, 237, 128) 80%);
+}
+
+.navigation {
+    display: flex;
+    flex: 4;
+    margin-left: 0.5rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.navigation::-webkit-scrollbar {
+    display: none;
+}
+
+.navigation li {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+    color: #333;
+}
+
+.navigation .active {
+    position: relative;
+    color: #000;
+    font-weight: bold;
+}
+
+.navigation .active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.1rem;
+    height: 0.25rem;
+    background: linear-gradient(90deg, rgba(251, 237, 128, 50%) 0%, rgb(253, 221, 74) 100%);
+    border-radius: 0.25rem;
+}
+
+#header .right-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 0.4rem;
+}
+
+.right-container .microphone {
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.right-container .menu {
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.search {
+    display: flex;
+    margin: 0.5rem 0.2rem;
+    width: 16.5rem;
+    height: 1.2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.search .s-search {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.s-search .swiper-slide {
+    display: flex;
+}
+
+.s-search .icon-sousuo {
+    margin: 0.18rem 0.4rem;
+    font-size: 0.8rem;
+}
+
+.s-search input {
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-right: 0.5rem;
+    font-size: 0.5rem;
+}
+
+/* header end */
+
+/* footer start */
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 9;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    text-align: center;
+    position: relative;
+}
+
+footer svg {
+    font-size: 1rem;
+    color: #333;
+}
+
+footer p {
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
+
+footer a {
+    color: #333;
+}
+
+footer .selected {
+    background-color: rgb(251, 237, 128);
+    width: 1.5rem;
+    height: 1.3rem;
+    border-radius: 1rem;
+}
+
+footer .player {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: left;
+    margin: 0.2rem 0.8rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: #C6CACD;
+}
+
+footer .record {
+    position: absolute;
+    bottom: -0.4rem;
+    left: -0.1rem;
+}
+
+.record svg {
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: yellow;
+}
+
+.player .music-name {
+    margin-left: 2.5rem;
+    font-size: 0.6rem;
+    color: #fff;
+    flex: 1;
+}
+
+.player .play-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 0.2rem;
+}
+
+.play-btn svg {
+    font-size: 1.2rem;
+}
+
+/* footer end */
+
+/* main start */
+.box {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 5.2rem 0;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+.box .user {
+    display: flex;
+    align-items: center;
+    padding: 0 0.8rem;
+}
+
+.box .user img {
+    width: 1.2rem;
+    border-radius: 1rem;
+}
+
+.box .user .nickname {
+    max-width: 2.4rem;
+    overflow: hidden;
+    font-size: 0.6rem;
+    margin-left: 0.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.box .user .vip {
+    margin-left: 0.4rem;
+    font-size: 0.7rem;
+}
+
+.box .user .vip .icon {
+    vertical-align: -0.1rem;
+}
+
+.box .user .tips {
+    height: 0.8rem;
+    margin-left: 0.2rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.6rem;
+    color: #604621;
+    background-color: rgb(253, 232, 201);
+}
+
+.box .user .s1 {
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden;
+    margin-left: 0.2rem;
+    font-size: 0.5rem;
+    color: #aaa;
+    flex: 1;
+}
+
+.s1 .swiper-slide {
+    text-align: right;
+}
+
+.box .menuTab ul {
+    margin: 1rem 0;
+    padding: 0 0.8rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    align-items: center;
+}
+
+.box .menuTab li {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+.box .menuTab svg {
+    font-size: 1.2rem;
+}
+
+.box .menuTab div {
+    text-align: center;
+}
+
+.box .menuTab p {
+    color: #444;
+    font-size: 0.6rem;
+    white-space: nowrap;
+}
+
+.box .card-player {
+    display: flex;
+    height: 6rem;
+    margin: 0 0.8rem;
+}
+
+.card-player .left-container {
+    width: 50%;
+    margin-right: 0.5rem;
+    border-radius: 1rem;
+    background-color: #D07789;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.left-container .day-recommend {
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-container .player-recommend {
+    display: flex;
+    position: absolute;
+    bottom: 0.5rem;
+    align-items: center;
+}
+
+.player-recommend .tag {
+    color: #fff;
+    font-size: 0.5rem;
+    background-color: #d6909e;
+    padding: 0.1rem;
+    margin-right: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.player-recommend .roll-box {
+    width: 4rem;
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.player-recommend .music-scroll {
+    color: #fff;
+    position: absolute;
+    font-size: 0.5rem;
+    white-space: nowrap;
+    animation-name: roll;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes roll {
+    from {
+        transform: translate(0%, 0);
+    }
+
+    to {
+        transform: translate(-100%, 0);
+    }
+}
+
+.player-recommend .iconfont {
+    margin-left: 0.2rem;
+    color: #d6909e;
+    background-color: #fff;
+    padding: 0.15rem;
+    border-radius: 0.5rem;
+}
+
+.card-player .right-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-player .box-top {
+    height: 60%;
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-bottom: 0.8rem;
+    background-color: #FFF3D1;
+}
+
+.card-player .box-bottom {
+    height: 30%;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #ACF2FE;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    justify-content: space-around;
+}
+
+.card-player .imagin-love {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #418B98;
+}
+
+.box-bottom .iconfont {
+    margin-left: 0.2rem;
+    color: #62C1DD;
+    background-color: #fff;
+    padding: 0.15rem;
+    border-radius: 0.5rem;
+}
+
+.card-player .box-top {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+}
+
+.box-top .carefully {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.carefully .day {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #9c6c3b;
+}
+
+.carefully .podcast {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #bf923d;
+}
+
+.carefully .iconfont {
+    margin-left: 0.5rem;
+    color: #9c6c3b;
+    background-color: #fff;
+    padding: 0.15rem;
+    border-radius: 0.5rem;
+}
+
+.box-top .s2 {
+    color: #9c6c3b;
+    font-size: 0.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden;
+    margin-left: 0.2rem;
+}
+
+.box .recommend-music {
+    margin: 0.5rem 0.8rem;
+    height: 15rem;
+}
+
+.recommend-music .title {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.recommend-music .r-player {
+    margin-left: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    color: #4B3F25;
+    background-color: #fff3cd;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    width: 2.5rem;
+    border-radius: 1rem;
+}
+
+.r-player .icon-bofangqi-bofang {
+    color: #fbaf26;
+}
+
+.recommend-music ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0.8rem 0;
+}
+
+.recommend-music li {
+    display: flex;
+    width: 85%;
+    padding: 0.2rem 0.5rem;
+    align-items: center;
+}
+
+.recommend-music .albumcover {
+    width: 2.8rem;
+    border-radius: 0.2rem;
+}
+
+.recommend-music .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 4;
+    margin-left: 0.5rem;
+}
+
+.name span {
+    font-size: 0.8rem;
+}
+
+.name p {
+    font-size: 0.6rem;
+}
+
+.love-add {
+    flex: 1;
+}
+
+.love-add .iconfont {
+    color: #ddd;
+}
+
+/* 热门页面 */
+.banner {
+    width: 95%;
+    height: 8rem;
+    padding: 0 0.5rem;
+}
+
+.banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem;
+    object-fit: cover;
+}
+
+.edit-content {
+    width: 100%;
+    height: 8rem;
+    padding: 0.5rem;
+}
+
+.edit-content .title {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.edit-content .edit-list {
+    width: 100%;
+    
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5rem 0;
+    scrollbar-width: none;
+}
+
+.edit-list li {
+    flex: 0 0 28%;
+    height: 6.2rem;
+    margin-right: 0.5rem;
+    position: relative;
+}
+.edit-list img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.edit-list p{
+    font-size: 0.6rem;
+    color: #333;
+    white-space: wrap;
+}
+.edit-list .button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -0.2rem;
+    bottom: 1rem;
+    font-size: 0.5rem;
+    color: #fff;
+    padding: 0.5rem;
+}
+.edit-list .iconfont{
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.edit-list .play-number {
+    font-weight: bold;
+    margin-left: 0.1rem;
+}
+/* 热门页面 end */
+/* 新推荐 */
+.music-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 0.5rem;
+}
+.new-nav {
+    display: flex;
+    align-items: center;
+}
+.new-list{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.new-list li{
+    font-size: 0.7rem;
+    color: #aaa;
+    margin-right: 0.8rem;
+}
+.new-nav span{
+    font-size: 0.6rem;
+    color: #aaa;
+}
+.new-nav svg{
+    font-size: 0.6rem;
+}
+.new-list .active{
+    position: relative;
+    color: #000;
+}
+.new-list .active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.2rem;
+    height: 0.25rem;
+    background:  rgb(253, 221, 74);
+    border-radius: 0.25rem;
+}
+.new-content{
+    height: 15rem;
+}
+.new-content ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0.8rem 0;
+}
+
+.new-content li {
+    display: flex;
+    width: 85%;
+    padding: 0.2rem 0.5rem;
+    align-items: center;
+}
+
+.new-content .albumcover {
+    width: 2.8rem;
+    border-radius: 0.2rem;
+}
+
+.new-content .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 4;
+    margin-left: 0.5rem;
+}
+
+.name span {
+    font-size: 0.8rem;
+}
+
+.name p {
+    font-size: 0.6rem;
+}
+.love-add{
+    flex: 1;
+}
+.love-add .iconfont{
+    color: #ddd;
+}
+
+.classification{
+    padding: 0.5rem;
+}
+.title-container{
+    display: flex;
+    align-items: center;
+}
+.title-container .title{
+    font-size: 0.7rem;
+    font-weight: bold;
+    flex: 1;
+}
+.title-container span:nth-of-type(2){
+    font-size: 0.6rem;
+    color: #aaa;
+}
+.title-container svg{
+    font-size: 0.6rem;
+}
+.classification .type-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    margin: 0.5rem 0;
+    
+}
+.type-list li{
+    flex: 0 0 45%;
+    height: 3rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+.type-list img{
+    width: 100%;
+}
+.type-list .f-title{
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 0.6rem;
+}
+.type-list .s-title{
+    margin-left: 0.5rem;
+    font-size: 0.6rem;
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+}
+.charts{
+    padding: 0.5rem;
+}
+.charts .charts-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0.5rem;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.charts-box .box-item{
+    flex: 0 0 90%;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+.box-item .item-title{
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.box-item .charts-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem
+}
+.charts-list li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.2rem;
+}
+.charts-list img{
+    width: 2.8rem;
+    border-radius: 0.2rem;
+}
+.charts-list .name{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.2rem;
+}
+.name p span{
+    color: #CA9F51;
+    font-size: 0.5rem;
+    padding: 0.05rem;
+    border: 0.01rem solid #B09A73;
+    border-radius: 0.1rem;
+}
+/* main end */
